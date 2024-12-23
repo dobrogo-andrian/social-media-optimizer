@@ -1,37 +1,91 @@
-/* src/pages/HomePage.css */
-
+main {
+    flex: 1; /* Allows this element to grow and fill available space, pushing the footer down */
+    display: flex;
+}
+.root{
+    height: 100vh;
+}
 .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.navbar .nav-links a, .navbar .cta-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    text-decoration: none;
+}
+
+.btn-signup {
+    background-color: orange;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.hero-section {
     text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-.home-header h1 {
-    color: #333;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-.features ul {
-    list-style: none;
-    padding: 0;
+.feature-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
 }
 
-.features li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.cta-buttons {
-    margin-top: 20px;
-}
-
-.signup-btn, .login-btn {
-    padding: 10px 20px;
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
     color: white;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
 }
 
-.signup-btn:hover, .login-btn:hover {
-    background-color: #0056b3;
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a {
+    margin-right: 10px;
 }
