@@ -1,1 +1,37 @@
 /* src/pages/HomePage.css */
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-header h1 {
+    color: #333;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.signup-btn, .login-btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.signup-btn:hover, .login-btn:hover {
+    background-color: #0056b3;
+}
