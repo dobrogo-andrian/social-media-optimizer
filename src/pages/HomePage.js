@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './HomePage.css'; // Importing the CSS file for styling
+ // Importing the CSS file for styling
+export default HomePage;
 
 function HomePage() {
     return (
@@ -66,4 +67,3 @@ function HomePage() {
     );
 }
 
-export default HomePage;

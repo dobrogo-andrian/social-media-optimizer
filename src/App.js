@@ -33,7 +33,6 @@ function App() {
             <Route path="/login" component={LoginPage} />
             <Route path="/signup" component={SignUpPage} />
             <ProtectedRoute path="/dashboard" component={DashboardPage} />
-            {/* Add other routes here */}
           </Switch>
         </div>
       </Router>
