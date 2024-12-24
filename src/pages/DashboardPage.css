@@ -1,0 +1,31 @@
+.dashboard-container {
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-nav {
+    background-color: #0056b3;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.dashboard-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.user-info, .recent-activity {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.user-info h2, .recent-activity h2 {
+    color: #333;
+}

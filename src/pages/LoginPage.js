@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './LoginPage.css'; // Importing the CSS file for styling
+import './LoginPage.css'; // Make sure your CSS handles this addition gracefully
 
 function LoginPage() {
     const [username, setUsername] = useState('');
@@ -8,9 +8,7 @@ function LoginPage() {
 
     const handleLogin = (event) => {
         event.preventDefault();
-        // Handle login logic here
         console.log("Login with:", username, password);
-        // Redirect or show error based on authentication result
     };
 
     return (
@@ -35,6 +33,7 @@ function LoginPage() {
                 />
                 <button type="submit" className="btn login-btn">Login</button>
                 <div className="links">
+                    <Link to="/">Home</Link>
                     <Link to="/reset-password">Forgot Password?</Link>
                     <Link to="/signup">Sign Up</Link>
                 </div>

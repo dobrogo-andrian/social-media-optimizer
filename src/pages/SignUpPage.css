@@ -1,12 +1,21 @@
-.login-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
 }
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
 
-.login-form {
+.links a {
+    color: #0056b3;
+    text-decoration: none;
+    margin-right: 10px; /* Adds spacing between multiple links */
+}
+.signup-form {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -16,24 +25,24 @@
     flex-direction: column;
 }
 
-.login-form h1 {
+.signup-form h1 {
     text-align: center;
     color: #333;
 }
 
-.login-form label {
+.signup-form label {
     margin-bottom: 5px;
     color: #666;
 }
 
-.login-form input {
+.signup-form input {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.btn.login-btn {
+.btn.signup-btn {
     background-color: #0056b3;
     color: white;
     padding: 10px;
@@ -43,7 +52,7 @@
     transition: background-color 0.3s;
 }
 
-.btn.login-btn:hover {
+.btn.signup-btn:hover {
     background-color: #004494;
 }
 
@@ -55,5 +64,4 @@
 .links a {
     color: #0056b3;
     text-decoration: none;
-    margin-right: 10px; /* Adds spacing between multiple links */
 }

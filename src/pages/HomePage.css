@@ -51,23 +51,58 @@ main {
 }
 
 .features {
-    display: flex;
-    justify-content: center;
     padding: 20px;
+    background-color: #f0f0f0;
 }
-
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
     gap: 20px;
 }
 
 .feature-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 20px;
-    background-color: #e9ecef;
-    border-radius: 10px;
+}
+
+.feature-grid .feature-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures text colors are inherited and not default link colors */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-grid .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.feature-item.special-feature {
+    grid-column: 1 / -1; /* Makes it span all columns */
+    background-color: #e0f7fa; /* Different background to highlight */
+    order: 999; /* Ensures it is at the bottom */
+}
+.icon {
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #333;
 }
 
 .footer {

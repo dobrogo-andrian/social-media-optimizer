@@ -26,26 +26,26 @@ function HomePage() {
             <section className="features">
                 <h2>Features</h2>
                 <div className="feature-grid">
-                    <div className="feature-item">
+                    <Link to="/dashboard" className="feature-item">
                         <div className="icon">📊</div>
                         <h3>Analyze Performance</h3>
                         <p>Deep insights into your social media metrics.</p>
-                    </div>
-                    <div className="feature-item">
-                        <div className="icon">💡</div>
-                        <h3>Get Suggestions</h3>
-                        <p>Optimization tips to improve your strategy.</p>
-                    </div>
-                    <div className="feature-item">
+                    </Link>
+                    <Link to="/dashboard" className="feature-item">
                         <div className="icon">📅</div>
                         <h3>Schedule Posts</h3>
                         <p>Effortless scheduling to save time.</p>
-                    </div>
-                    <div className="feature-item">
+                    </Link>
+                    <Link to="/dashboard" className="feature-item">
                         <div className="icon">📈</div>
                         <h3>Track Trends</h3>
                         <p>Stay ahead with the latest in social media.</p>
-                    </div>
+                    </Link>
+                    <Link to="/dashboard" className="feature-item special-feature">
+                        <div className="icon">💡</div>
+                        <h3>Get Suggestions</h3>
+                        <p>Optimization tips to improve your strategy.</p>
+                    </Link>
                 </div>
             </section>
             <footer className="footer">
