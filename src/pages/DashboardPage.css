@@ -29,3 +29,21 @@
 .user-info h2, .recent-activity h2 {
     color: #333;
 }
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recent-posts, .insights {
+    flex-basis: 48%; /* Adjust this value based on your layout needs */
+}
+
+.post-item {
+    margin-bottom: 20px;
+}

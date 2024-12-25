@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../redux/AuthContext';
  // Importing the CSS file for styling
 export default HomePage;
 
 function HomePage() {
+    const { isLoggedIn, logout, user } = useAuth(); // Use the useAuth hook to access the login state and logout function
+
+    const handleLogout = () => {
+        logout(); // Call the logout function which should also update your AuthContext
+    };
     return (
         <div className="home-container">
             <nav className="navbar">
@@ -15,15 +21,29 @@ function HomePage() {
                     <Link to="/support">Support</Link>
                 </div>
                 <div className="cta-buttons">
-                    <Link to="/signup" className="btn btn-signup">Sign Up</Link>
-                    <Link to="/login" className="btn btn-login">Login</Link>
+                    {isLoggedIn ? (
+                        <>
+                            <button onClick={handleLogout} className="btn btn-login">Logout</button>
+                            <Link to="/dashboard" className="btn btn-signup">Dashboard</Link>
+                        </>
+                    ) : (
+                        <>
+                            <Link to="/signup" className="btn btn-signup">Sign Up</Link>
+                            <Link to="/login" className="btn btn-login">Login</Link>
+                        </>
+                    )}
                 </div>
             </nav>
             <header className="hero-section">
                 <h1>Welcome to Social Media Optimizer!</h1>
                 <p>Optimize your social media strategy with data-driven insights.</p>
-                <Link to="/signup" className="btn btn-large">Get Started</Link>
+                {isLoggedIn && user ? (
+                    <div className="btn btn-large">Hello, {user.username}!</div>
+                ) : (
+                    <Link to="/signup" className="btn btn-large">Get Started</Link>
+                )}
             </header>
+
             <section className="features">
                 <h2>Features</h2>
                 <div className="feature-grid">
