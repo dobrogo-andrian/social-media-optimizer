@@ -1,39 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './redux/AuthContext';  // Adjust path if necessary
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import DashboardPage from './pages/DashboardPage';
+import PropTypes from 'prop-types'; // Import PropTypes
 
 import './App.css';
-// eslint-disable-next-line react/prop-types
-const ProtectedRoute = ({ component: Component, ...rest }) => {
-  const { isLoggedIn } = useAuth();  // Using the useAuth hook to check login status
-  return (
-    <Route
-      {...rest}
-      render={props =>
-        isLoggedIn ? (
-          <Component {...props} />
-        ) : (
-          <Redirect to="/login" />
-        )
-      }
-    />
-  );
+
+// ProtectedRoute component adapted for React Router v6+
+
+const ProtectedRoute = ({ children }) => {
+  const { isLoggedIn } = useAuth();
+  return isLoggedIn ? children : <Navigate to="/login" replace />;
 };
+ProtectedRoute.propTypes = {
+  children: PropTypes.node.isRequired // 'node' covers anything that can be rendered: numbers, strings, elements, etc.
+};
+
 function App() {
   return (
     <AuthProvider>
       <Router>
         <div className="App">
-          <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/signup" component={SignUpPage} />
-            <ProtectedRoute path="/dashboard" component={DashboardPage} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+          </Routes>
         </div>
       </Router>
     </AuthProvider>
