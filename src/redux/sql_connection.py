@@ -3,12 +3,31 @@ import pyodbc
 import hashlib
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
+from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import logging
+import os
+os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
 
 app = Flask(__name__)
 CORS(app)
-app.config['JWT_SECRET_KEY'] = 'your-secret-key'  # Change this!
+app.config['JWT_SECRET_KEY'] = 'your-secret-key'
 jwt = JWTManager(app)
+pipe = pipeline("text-classification")
+def enhance_text(text):
+    return "improved text"
 
+@app.route('/improve-text', methods=['POST'])
+@jwt_required()
+def improve_text():
+    data = request.json
+    text_content = data['text']
+    try:
+        optimized_text = enhance_text(text_content)
+        return jsonify(suggestions=optimized_text), 200
+    except Exception as e:
+        logging.error("Error in processing text", exc_info=True)
+        return jsonify(error=str(e)), 500
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json
@@ -78,4 +97,7 @@ def signup():
         conn.close()
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                        handlers=[logging.FileHandler('app.log', encoding='utf-8'), logging.StreamHandler()])
+
     app.run(debug=True, port=5000)

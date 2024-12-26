@@ -16,7 +16,10 @@
 }
 
 .dashboard-content {
-    padding: 20px;
+    padding: 40px; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content */
 }
 
 .user-info, .recent-activity {
@@ -29,21 +32,90 @@
 .user-info h2, .recent-activity h2 {
     color: #333;
 }
-.dashboard-content {
-    display: flex;
-    flex-direction: column;
-}
 
 .horizontal-section {
+    width: 100%; /* Ensures full width usage */
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
-
-.recent-posts, .insights {
-    flex-basis: 48%; /* Adjust this value based on your layout needs */
+.instagram-data{
+    width: 100%;
+}
+.insights {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns children to the center */
+}
+.recent-posts {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns children (post items and buttons) to the center */
 }
 
 .post-item {
+    text-align: center; /* Centers text within its container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything in post item is centered */
     margin-bottom: 20px;
+}
+
+.post-item img {
+    width: 26vw; /* Match image width */
+    height: 56vh;
+    object-fit: cover;
+    border-radius: 10px; /* Soften edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.post-item p {
+    width: 26vw; /* Match image width */
+    height: 20vh;
+    overflow-y: auto; /* Allows vertical scrolling */
+    font-size: 18px; /* Larger text */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Soft background */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-insights-button {
+    margin-top: 20px; /* Space above the button */
+    width: 100%; /* Full width button */
+}
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    width: 100%; /* Full width of the container */
+}
+
+
+
+@media (max-width: 768px) {
+    .post-item img, .post-item p {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .post-item p {
+        min-height: 100px; /* Ensure min-height is maintained on smaller screens */
+    }
+
+
+
+
 }
