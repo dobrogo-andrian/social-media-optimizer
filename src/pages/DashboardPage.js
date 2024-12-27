@@ -123,11 +123,6 @@ const fetchTextAdvice = async (caption) => {
     const goToPreviousPost = () => {
         setCurrentPostIndex(prevIndex => (prevIndex - 1 + instagramData.posts.length) % instagramData.posts.length);
     };
-     useEffect(() => {
-        if (instagramData.posts.length > 0) {
-            fetchTextAdvice(instagramData.posts[currentPostIndex].caption);
-        }
-    }, [currentPostIndex, instagramData.posts]);
 
     return (
         <div className="dashboard-container">
@@ -147,15 +142,21 @@ const fetchTextAdvice = async (caption) => {
                             <h3>Recent Posts</h3>
                             {instagramData.posts.length > 0 && (
                                 <div className="post-item">
-                                    <img src={instagramData.posts[currentPostIndex].image} alt="Post thumbnail" />
+                                    <img src={instagramData.posts[currentPostIndex].image} alt="Post thumbnail"/>
                                     <p>{instagramData.posts[currentPostIndex].caption}</p>
-                                    <p><strong>Text Advice:</strong> {textAdvice}</p>
-                                    <button onClick={handleAnalyzeText} className="analyze-text-button">Analyze Text</button>
                                 </div>
                             )}
+
                             <div className="button-container">
                                 <button onClick={goToPreviousPost}>Previous</button>
                                 <button onClick={goToNextPost}>Next</button>
+                            </div>
+                        </div>
+                        <div className="insights">
+                            <div className="post-item">
+                            <p><strong>Improved text:</strong> {textAdvice}</p>
+                            <button onClick={handleAnalyzeText} className="analyze-text-button">Analyze Text
+                            </button>
                             </div>
                         </div>
                     </div>

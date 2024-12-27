@@ -3,8 +3,7 @@ import pyodbc
 import hashlib
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
-from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import MBartForConditionalGeneration, MBart50Tokenizer
 import logging
 import os
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
@@ -13,9 +12,18 @@ app = Flask(__name__)
 CORS(app)
 app.config['JWT_SECRET_KEY'] = 'your-secret-key'
 jwt = JWTManager(app)
-pipe = pipeline("text-classification")
+tokenizer = MBart50Tokenizer.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
+model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50-many-to-many-mmt")
+
+
 def enhance_text(text):
-    return "improved text"
+    # Remove musical note characters
+    text = text.replace("♫", "").strip()
+    tokenizer.src_lang = "uk_UA"
+    inputs = tokenizer(f"Analyze the text and improve it for instagram needs: {text}", return_tensors="pt")
+    outputs = model.generate(**inputs, forced_bos_token_id=tokenizer.lang_code_to_id["uk_UA"])
+    generated_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+    return generated_text[0].replace("♫", "") if generated_text else ""
 
 @app.route('/improve-text', methods=['POST'])
 @jwt_required()
