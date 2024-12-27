@@ -25,7 +25,6 @@ const fetchTextAdvice = async (caption) => {
         if (response.ok) {
             const data = await response.json();
             setTextAdvice(data.suggestions);
-            console.log(data.suggestions); // Should now log the optimized text
         } else {
             console.error('Failed to fetch text advice');
         }
@@ -37,7 +36,6 @@ const fetchTextAdvice = async (caption) => {
     const handleAnalyzeText = () => {
         const caption = instagramData.posts[currentPostIndex].caption;
         fetchTextAdvice(caption);
-        console.log('Analyzing text:', caption)
     };
     useEffect(() => {
         if (!isLoggedIn) {
@@ -153,10 +151,11 @@ const fetchTextAdvice = async (caption) => {
                             </div>
                         </div>
                         <div className="insights">
-                            <div className="post-item">
-                            <p><strong>Improved text:</strong> {textAdvice}</p>
-                            <button onClick={handleAnalyzeText} className="analyze-text-button">Analyze Text
-                            </button>
+                            <div className="insight-item">
+                                <h2>Improved text:</h2>
+                                <p>{textAdvice}</p>
+                                <button onClick={handleAnalyzeText} className="analyze-text-button">Analyze Text
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1178,3 +1178,200 @@ AttributeError: 'list' object has no attribute 'replace'
 2024-12-27 14:17:30,280 - INFO -  * Restarting with stat
 2024-12-27 14:17:39,720 - WARNING -  * Debugger is active!
 2024-12-27 14:17:39,725 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:22:43,016 - INFO - 127.0.0.1 - - [27/Dec/2024 14:22:43] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:23:09,472 - INFO - 127.0.0.1 - - [27/Dec/2024 14:23:09] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:26:01,214 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:26:01,993 - INFO -  * Restarting with stat
+2024-12-27 14:26:11,409 - WARNING -  * Debugger is active!
+2024-12-27 14:26:11,414 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:26:17,145 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:26:17,805 - INFO -  * Restarting with stat
+2024-12-27 14:26:26,411 - WARNING -  * Debugger is active!
+2024-12-27 14:26:26,415 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:26:51,183 - INFO - 127.0.0.1 - - [27/Dec/2024 14:26:51] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:27:23,294 - INFO - 127.0.0.1 - - [27/Dec/2024 14:27:23] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:29:07,919 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:29:08,639 - INFO -  * Restarting with stat
+2024-12-27 14:29:17,388 - WARNING -  * Debugger is active!
+2024-12-27 14:29:17,392 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:29:43,525 - INFO - 127.0.0.1 - - [27/Dec/2024 14:29:43] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:30:15,401 - INFO - 127.0.0.1 - - [27/Dec/2024 14:30:15] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:30:29,703 - INFO - 127.0.0.1 - - [27/Dec/2024 14:30:29] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:30:35,971 - INFO - 127.0.0.1 - - [27/Dec/2024 14:30:35] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:31:24,280 - INFO - 127.0.0.1 - - [27/Dec/2024 14:31:24] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:31:24,589 - INFO - 127.0.0.1 - - [27/Dec/2024 14:31:24] "[31m[1mPOST /improve-text HTTP/1.1[0m" 401 -
+2024-12-27 14:31:31,263 - INFO - 127.0.0.1 - - [27/Dec/2024 14:31:31] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:31:31,569 - INFO - 127.0.0.1 - - [27/Dec/2024 14:31:31] "[31m[1mPOST /improve-text HTTP/1.1[0m" 401 -
+2024-12-27 14:33:24,597 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:33:25,402 - INFO -  * Restarting with stat
+2024-12-27 14:33:34,443 - WARNING -  * Debugger is active!
+2024-12-27 14:33:34,448 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:33:39,867 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:39] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:33:39,870 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:39] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:33:39,873 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:39] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:33:39,876 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:39] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:33:40,115 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:40] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 14:33:40,177 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:40] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 14:33:40,425 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:40] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 14:33:40,487 - INFO - 127.0.0.1 - - [27/Dec/2024 14:33:40] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 14:34:00,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 14:34:00,524 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 14:34:00,525 - INFO -  * Restarting with stat
+2024-12-27 14:34:10,059 - WARNING -  * Debugger is active!
+2024-12-27 14:34:10,064 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:34:43,278 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:43] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 14:34:43,592 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:43] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-12-27 14:34:51,342 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 14:34:51,659 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "POST /login HTTP/1.1" 200 -
+2024-12-27 14:34:51,915 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:51,968 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:51,970 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:51,973 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:51] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:52,232 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:52] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:52,277 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:52] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:34:52,544 - INFO - 127.0.0.1 - - [27/Dec/2024 14:34:52] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:35:08,427 - INFO - 127.0.0.1 - - [27/Dec/2024 14:35:08] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:36:00,715 - INFO - 127.0.0.1 - - [27/Dec/2024 14:36:00] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:36:51,570 - INFO - 127.0.0.1 - - [27/Dec/2024 14:36:51] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:37:25,702 - INFO - 127.0.0.1 - - [27/Dec/2024 14:37:25] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:45:07,687 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-27 14:45:07,687 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-27 14:45:07,689 - INFO -  * Restarting with stat
+2024-12-27 14:45:19,330 - WARNING -  * Debugger is active!
+2024-12-27 14:45:19,330 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:45:27,434 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:45:28,365 - INFO -  * Restarting with stat
+2024-12-27 14:45:37,865 - WARNING -  * Debugger is active!
+2024-12-27 14:45:37,870 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:45:56,806 - INFO - 127.0.0.1 - - [27/Dec/2024 14:45:56] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 14:45:57,121 - INFO - 127.0.0.1 - - [27/Dec/2024 14:45:57] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-12-27 14:46:19,655 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:19] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 14:46:19,968 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:19] "POST /login HTTP/1.1" 200 -
+2024-12-27 14:46:20,230 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,273 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,280 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,281 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,545 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,592 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:20,856 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:20] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 14:46:24,391 - INFO - 127.0.0.1 - - [27/Dec/2024 14:46:24] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:47:16,756 - INFO - 127.0.0.1 - - [27/Dec/2024 14:47:16] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:51:17,420 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:51:18,252 - INFO -  * Restarting with stat
+2024-12-27 14:51:27,554 - WARNING -  * Debugger is active!
+2024-12-27 14:51:27,558 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:51:39,138 - INFO - 127.0.0.1 - - [27/Dec/2024 14:51:39] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:52:03,174 - INFO - 127.0.0.1 - - [27/Dec/2024 14:52:03] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:53:01,166 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:53:01,906 - INFO -  * Restarting with stat
+2024-12-27 14:53:10,920 - WARNING -  * Debugger is active!
+2024-12-27 14:53:10,924 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:53:44,211 - INFO - 127.0.0.1 - - [27/Dec/2024 14:53:44] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:54:33,043 - INFO - 127.0.0.1 - - [27/Dec/2024 14:54:33] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 14:57:09,715 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 14:57:10,487 - INFO -  * Restarting with stat
+2024-12-27 14:57:19,113 - WARNING -  * Debugger is active!
+2024-12-27 14:57:19,118 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 14:57:23,003 - INFO - 127.0.0.1 - - [27/Dec/2024 14:57:23] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 14:58:13,323 - INFO - 127.0.0.1 - - [27/Dec/2024 14:58:13] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:00:19,397 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:00:20,131 - INFO -  * Restarting with stat
+2024-12-27 15:00:28,573 - WARNING -  * Debugger is active!
+2024-12-27 15:00:28,577 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:00:40,447 - INFO - 127.0.0.1 - - [27/Dec/2024 15:00:40] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:01:04,742 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:04] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:01:37,245 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:37] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:01:37,562 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:37] "[31m[1mPOST /improve-text HTTP/1.1[0m" 401 -
+2024-12-27 15:01:44,493 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:44] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:01:44,810 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:44] "[31m[1mPOST /improve-text HTTP/1.1[0m" 401 -
+2024-12-27 15:01:46,139 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:46] "[31m[1mPOST /improve-text HTTP/1.1[0m" 401 -
+2024-12-27 15:01:50,911 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:50] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:50,912 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:50] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:50,913 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:50] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:50,916 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:50] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:51,177 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:51] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 15:01:51,225 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:51] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 15:01:51,494 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:51] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 15:01:51,540 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:51] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 15:01:56,848 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:56] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 15:01:57,197 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "POST /login HTTP/1.1" 200 -
+2024-12-27 15:01:57,414 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:57,508 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:57,509 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:57,511 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:57,725 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:57,819 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:57] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:01:58,039 - INFO - 127.0.0.1 - - [27/Dec/2024 15:01:58] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:02:04,239 - INFO - 127.0.0.1 - - [27/Dec/2024 15:02:04] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:02:10,781 - INFO - 127.0.0.1 - - [27/Dec/2024 15:02:10] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:02:57,910 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:02:58,630 - INFO -  * Restarting with stat
+2024-12-27 15:03:07,971 - WARNING -  * Debugger is active!
+2024-12-27 15:03:07,976 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:03:49,653 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:03:50,245 - INFO -  * Restarting with stat
+2024-12-27 15:03:58,641 - WARNING -  * Debugger is active!
+2024-12-27 15:03:58,646 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:04:10,780 - INFO - 127.0.0.1 - - [27/Dec/2024 15:04:10] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:04:19,244 - INFO - 127.0.0.1 - - [27/Dec/2024 15:04:19] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:05:20,584 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:05:21,291 - INFO -  * Restarting with stat
+2024-12-27 15:05:29,624 - WARNING -  * Debugger is active!
+2024-12-27 15:05:29,629 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:05:37,024 - INFO - 127.0.0.1 - - [27/Dec/2024 15:05:37] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:05:45,646 - INFO - 127.0.0.1 - - [27/Dec/2024 15:05:45] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:06:09,538 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:06:10,411 - INFO -  * Restarting with stat
+2024-12-27 15:06:19,931 - WARNING -  * Debugger is active!
+2024-12-27 15:06:19,935 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:07:46,940 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:07:47,692 - INFO -  * Restarting with stat
+2024-12-27 15:07:56,457 - WARNING -  * Debugger is active!
+2024-12-27 15:07:56,462 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:08:25,192 - INFO - 127.0.0.1 - - [27/Dec/2024 15:08:25] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:08:33,575 - INFO - 127.0.0.1 - - [27/Dec/2024 15:08:33] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:08:48,759 - INFO - 127.0.0.1 - - [27/Dec/2024 15:08:48] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:08:56,802 - INFO - 127.0.0.1 - - [27/Dec/2024 15:08:56] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:09:53,906 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:09:54,627 - INFO -  * Restarting with stat
+2024-12-27 15:10:03,623 - WARNING -  * Debugger is active!
+2024-12-27 15:10:03,628 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:10:12,502 - INFO - 127.0.0.1 - - [27/Dec/2024 15:10:12] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:10:21,306 - INFO - 127.0.0.1 - - [27/Dec/2024 15:10:21] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:10:58,742 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:10:59,427 - INFO -  * Restarting with stat
+2024-12-27 15:11:08,165 - WARNING -  * Debugger is active!
+2024-12-27 15:11:08,170 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:11:22,098 - INFO - 127.0.0.1 - - [27/Dec/2024 15:11:22] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:11:30,468 - INFO - 127.0.0.1 - - [27/Dec/2024 15:11:30] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:11:34,561 - INFO - 127.0.0.1 - - [27/Dec/2024 15:11:34] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:12:45,136 - INFO - 127.0.0.1 - - [27/Dec/2024 15:12:45] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:15:18,973 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:15:19,741 - INFO -  * Restarting with stat
+2024-12-27 15:15:28,300 - WARNING -  * Debugger is active!
+2024-12-27 15:15:28,304 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:15:41,463 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:15:42,056 - INFO -  * Restarting with stat
+2024-12-27 15:15:51,047 - WARNING -  * Debugger is active!
+2024-12-27 15:15:51,051 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:16:02,438 - INFO - 127.0.0.1 - - [27/Dec/2024 15:16:02] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:17:16,347 - INFO - 127.0.0.1 - - [27/Dec/2024 15:17:16] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:18:18,078 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:18:18,788 - INFO -  * Restarting with stat
+2024-12-27 15:18:27,920 - WARNING -  * Debugger is active!
+2024-12-27 15:18:27,925 - INFO -  * Debugger PIN: 621-392-746
+2024-12-27 15:19:18,558 - INFO - 127.0.0.1 - - [27/Dec/2024 15:19:18] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:19:18,806 - INFO - 127.0.0.1 - - [27/Dec/2024 15:19:18] "[31m[1mGET /user-info HTTP/1.1[0m" 401 -
+2024-12-27 15:21:23,353 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:23] "OPTIONS /login HTTP/1.1" 200 -
+2024-12-27 15:21:23,669 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:23] "POST /login HTTP/1.1" 200 -
+2024-12-27 15:21:23,672 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:23] "OPTIONS /user-info HTTP/1.1" 200 -
+2024-12-27 15:21:23,980 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:23] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:21:24,241 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:24] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:21:24,290 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:24] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:21:24,556 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:24] "GET /user-info HTTP/1.1" 200 -
+2024-12-27 15:21:33,816 - INFO - 127.0.0.1 - - [27/Dec/2024 15:21:33] "OPTIONS /improve-text HTTP/1.1" 200 -
+2024-12-27 15:22:24,757 - INFO - 127.0.0.1 - - [27/Dec/2024 15:22:24] "POST /improve-text HTTP/1.1" 200 -
+2024-12-27 15:25:19,746 - INFO -  * Detected change in 'C:\\Users\\GIGABYTE\\social-media-optimizer\\src\\redux\\sql_connection.py', reloading
+2024-12-27 15:25:20,556 - INFO -  * Restarting with stat

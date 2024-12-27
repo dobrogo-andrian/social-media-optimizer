@@ -4,8 +4,8 @@ import hashlib
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
 from transformers import MBartForConditionalGeneration, MBart50Tokenizer
-import logging
 import os
+
 os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
 
 app = Flask(__name__)
@@ -18,12 +18,22 @@ model = MBartForConditionalGeneration.from_pretrained("facebook/mbart-large-50-m
 
 def enhance_text(text):
     # Remove musical note characters
-    text = text.replace("♫", "").strip()
+    unwanted_start = "Проаналізуй текст, і оптимізуй його для зручного сприйняття читачем, початок тексту:"
     tokenizer.src_lang = "uk_UA"
-    inputs = tokenizer(f"Analyze the text and improve it for instagram needs: {text}", return_tensors="pt")
-    outputs = model.generate(**inputs, forced_bos_token_id=tokenizer.lang_code_to_id["uk_UA"])
+    tokenizer.tgt_lang = "uk_UA"
+    inputs = tokenizer(f"{unwanted_start} {text}", return_tensors="pt")
+    outputs = model.generate(
+        **inputs,
+        forced_bos_token_id=tokenizer.lang_code_to_id["uk_UA"],
+        max_length=2200,
+        num_beams=5,  # Use beam search with 5 beams
+        no_repeat_ngram_size=2,  # Avoid repeating n-grams of size 2
+        early_stopping=True  # Stop when all beams reach the end token
+    )
     generated_text = tokenizer.batch_decode(outputs, skip_special_tokens=True)
-    return generated_text[0].replace("♫", "") if generated_text else ""
+    generated_text = generated_text[0].replace("♫", "").replace("♪", "").replace("Проаналізуй текст, і оптимізуй його для зручного для читача сприйняття, початок тексту:", "").replace("Проаналізуй текст, і оптимізуй його для зручного сприйняття читачем, початок тексту:", "").replace('""', "").replace("Проаналізуй текст, і оптимізуй його для зручного сприйняття читача, початок тексту:", "").strip()
+    return generated_text
+
 
 @app.route('/improve-text', methods=['POST'])
 @jwt_required()
@@ -34,8 +44,9 @@ def improve_text():
         optimized_text = enhance_text(text_content)
         return jsonify(suggestions=optimized_text), 200
     except Exception as e:
-        logging.error("Error in processing text", exc_info=True)
         return jsonify(error=str(e)), 500
+
+
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json
@@ -58,12 +69,14 @@ def login():
     else:
         return jsonify({'error': 'User not found'}), 404
 
+
 @app.route('/user-info')
 @jwt_required()
 def user_info():
     current_user = get_jwt_identity()
     # Fetch user details from the database using `current_user`
     return jsonify(username=current_user, email="email@example.com")  # Example data
+
 
 def get_db_connection():
     conn = pyodbc.connect(
@@ -74,6 +87,7 @@ def get_db_connection():
         'PWD=social-media-optimizer'
     )
     return conn
+
 
 @app.route('/signup', methods=['POST'])
 def signup():
@@ -104,8 +118,7 @@ def signup():
         cursor.close()
         conn.close()
 
+
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
-                        handlers=[logging.FileHandler('app.log', encoding='utf-8'), logging.StreamHandler()])
 
     app.run(debug=True, port=5000)
