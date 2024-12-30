@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+Ціль нашого проекту створити сайт-дистрибютор, 
+який буде аналізувати персональні сторінки користувачів в соціальних мережах,
+надавати рекомендації щодо їх ведення а також допомагати з оптимізацією дописів
+під формат конкретної соціальної мережі. Також за допомогою інтеграцій деяких соціальних мереж,
+наш сайт зможе спростити процес викладення дописів на сторінку.
+  Story Mapping для Проекту 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+1) Визначення шляху:
 
-In the project directory, you can run:
+Візія продукту:
+Проект — це платформа, яка надає рекомендації та інструменти для оптимізації сторінок у соціальних мережах,
+ допомагаючи інфлюенсерам та брендам покращити взаємодію з аудиторією та збільшити свою популярність.
 
-### `npm start`
+Проблема, яку ми намагаємося вирішити:
+Інфлюенсери та бренди часто стикаються з труднощами у виборі ефективної стратегії
+ведення профілів, адаптації контенту до вимог соцмереж та аналізу ефективності
+своїх дій.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Користь для користувача:
+Платформа допомагає користувачам зекономити час на пошук
+та створення контенту, автоматизувати публікацію постів і
+покращити свої соціальні профілі.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Користь для компанії:
+Це рішення збільшує залученість користувачів,
+ сприяє розвитку брендів та інфлюенсерів, а також підтримує
+ позитивну репутацію компанії як інноваційного провайдера.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+2) Створення основи історії:
+Обрана персона: Інфлюенсер початкового та середнього рівня.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Шлях користувача:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Реєстрація – Інфлюенсер реєструється на платформі.
+2. Заповнення профілю – Інфлюенсер заповнює інформацію про свої акаунти у соціальних мережах.
+3. Імпорт даних з соцмереж – Платформа завантажує дані з акаунтів користувача.
+4. Отримання рекомендацій – Інфлюенсер отримує поради щодо покращення профілів та контенту.
+5. Планування постів – Користувач планує публікацію постів.
+6. Аналіз ефективності – Інфлюенсер переглядає аналітику своїх профілів.
+7. Коригування стратегії – На основі отриманих даних користувач коригує свою стратегію.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Потік історії: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Користувач починає з реєстрації, проходить шлях від заповнення профілю
+до отримання рекомендацій, планування контенту та аналізу своїх дій для
+досягнення поставлених цілей.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3) Визначення та групування активностей:
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Реєстрація та створення профілю
+Реєстрація
+Заповнення інформації про соцмережі
+Налаштування акаунту
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Аналіз акаунтів та імпорт даних
+Підключення до соцмереж
+Імпорт даних
+Перевірка цільової аудиторії
 
-### Code Splitting
+Отримання рекомендацій та планування контенту
+Рекомендації щодо контенту
+Створення шаблонів постів
+Планування публікацій
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Моніторинг та аналіз ефективності
+Аналіз показників залученості
+Перевірка популярності постів
+Звіт по росту аудиторії
 
-### Analyzing the Bundle Size
+Коригування та адаптація стратегії
+Оцінка результатів
+Адаптація плану публікацій
+Впровадження нових рекомендацій
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4) Розбиття основних завдань на підзавдання:
 
-### Advanced Configuration
+Реєстрація та створення профілю
+Створення акаунту з електронною поштою або через соцмережу
+Додавання основної інформації
+Вибір основної соціальної мережі для аналізу
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Аналіз акаунтів та імпорт даних
+Підключення до Facebook/Instagram/LinkedIn
+Імпорт основних даних профілю
+Огляд даних про підписників та залученість
 
-### Deployment
+Отримання рекомендацій та планування контенту
+Перегляд трендів та популярних тем
+Створення плану постів на місяць
+Рекомендації щодо часу публікацій
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Моніторинг та аналіз ефективності
+Збір даних про кількість лайків, коментарів, підписників
+Перевірка залученості кожного посту
+Генерація щомісячного звіту
 
-### `npm run build` fails to minify
+Коригування та адаптація стратегії
+Перегляд рекомендацій
+Планування оновлень контенту
+Впровадження нових форматів публікацій
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+5) Пріоритезація завдань та підзавдань:
+
+Пріоритезація завдань:
+
+
+Реєстрація та створення профілю (найвища пріоритетність)
+
+Створення акаунту — критично важливе
+Вибір основної соцмережі — важливе
+Додавання додаткової інформації — середній пріоритет
+
+
+Аналіз акаунтів та імпорт даних
+
+Підключення до соцмереж — критично важливе
+Імпорт даних — важливе
+Огляд даних про аудиторію — середній пріоритет
+
+
+Отримання рекомендацій та планування контенту
+
+Перегляд трендів — важливе
+Планування постів — критично важливе
+Рекомендації щодо часу публікацій — середній пріоритет
+
+
+Моніторинг та аналіз ефективності
+
+Збір даних — важливе
+Генерація звіту — критично важливе
+Оцінка залученості — середній пріоритет
+
+
+Коригування та адаптація стратегії
+
+Впровадження нових рекомендацій — середній пріоритет
+Адаптація контенту — важливе
+Оновлення плану — критично важливе  
